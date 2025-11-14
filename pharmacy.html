@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Dolado Pharmacy</title>
+    <link rel="stylesheet" href="pharmacy.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+        <h1 class="text-3xl font-bold text-center">EL DOLADO PHARMACY</h1>
+        <p>We Provide Quality Medicines And Care For Our Community</p>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-6">
+               <li> <a href="pharmacy.html" class="hover:underline">Home</a></li>
+                <li><a href="#add-medicine" class="hover:underline">Add Medicine</a></li>
+                <li><a href="select.php" class="hover:underline">Medicines Available Now</a></li>
+                <li><a href="select3.php" class="hover:underline">Client Tab</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="max-w-4xl mx-auto mt-6 p-4">
+        <section id="home" class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to El Dolado Pharmacy</h2>
+            <p> Use the navigation to manage our stock or view patient information.</p>
+        </section>
+            <form action="insert.php" method="post">
+        
+        <section id="add-medicine" class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Add New Medicine</h2>
+            <div class="mb-4">
+               <label for="medicinename"> Medicine Name</label>
+        <input type="text"id="medicinename" name="medicinename"required> <br>
+        <label for="quantity">Quantity</label>
+        <input type="text"id="quantity" name="quantity"required> <br>
+        <label for="price">Price</label>
+        <input type="text"id="price"name="price"required> <br>
+        <label for="expirydate">Expiry Date</label>
+        <input type="date"id="expirydate" name="expirydate"required> <br>
+        
+                <button onclick="addMedicine()" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-700">Add to Stock</button>
+            </div>
+        </section>
+        </form>
+    </main>
+    <footer>&copy; 2025 El Dolado.All rights reserved~</footer>
+   
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #1e40af;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #d1d5db;
+}
+
+th {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+button[name="delete"] {
+    background-color: #dc2626;
+    color: white;
+}
+
+button[name="delete"]:hover {
+    background-color: #b91c1c;
+}
+
+button.update-btn {
+    background-color: #f59e0b;
+    color: white;
+}
+
+button.update-btn:hover {
+    background-color: #d97706;
+}
+
+p {
+    text-align: center;
+    color: #b91c1c;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+nav {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: 1px solid #3b82f6;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
